@@ -1,0 +1,138 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap");
+
+/* General Styling */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1A8EFD, #113f67);
+}
+
+.auth-box {
+  width: 460px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.auth-title {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1A8EFD;
+}
+
+/* Change "+" color in Health+ logo */
+.auth-sign {
+    color: #54de54;  /* Updated to green */
+}
+
+.auth-heading {
+  font-size: 22px;
+  margin-bottom: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Form Styling */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 14px;
+  padding-left: 48px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  transition: 0.3s;
+}
+
+.auth-input:focus {
+  border-color: #2d5f9a;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(45, 95, 154, 0.4);
+}
+
+/* Buttons */
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  background: #2d5f9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background: #1e4c7d;
+}
+
+/* Forgot Password */
+.forgot-password {
+  margin-top: 12px;
+  display: block;
+  color: #2d5f9a;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Toggle between Sign In & Sign Up */
+.auth-toggle {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.toggle-link {
+  color: #2d5f9a;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+.auth-box.sign-up-mode {
+  transform: scale(1.06);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.25);
+}
+
