@@ -30,6 +30,7 @@ import HealthTracker from "./components/HealthTracker";
 import PaymentIntegration from "./components/PaymentIntegration";
 import EmergencyAlert from "./components/EmergencyAlert";
 import AccessibilityEnhancements from "./components/AccessibilityEnhancements";
+import {Link} from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Docthea() {
@@ -38,7 +39,7 @@ export default function Docthea() {
       <Header />
       <SmoothScroll />
       <motion.main className="container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <Chatbot />
+        <Link to="/chatbot"><Chatbot /></Link>
         <BlockchainHealthRecords />
         <AIRecommendation />
         <IoTIntegration />
