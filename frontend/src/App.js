@@ -8,6 +8,7 @@ import Appointment from "./Pages/Appointment";
 import Login from "./Pages/LoginPage";
 import Chatbot from "./Pages/ChatbotPage"; // Import Chatbot Component
 import Docthea from "./Pages/DoctheaPage";
+import PrescriptionUpload from "./Pages/PrescriptionUploadPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/features" element={<Docthea />} />
           <Route path="/login" element={<Login />} />
           <Route path="/chatbot" element={<Chatbot />} /> {/* Chatbot Route */}
+          <Route path="/prescriptionupload" element={<PrescriptionUpload />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
