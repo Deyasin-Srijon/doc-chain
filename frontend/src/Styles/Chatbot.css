@@ -1,0 +1,103 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&display=swap');
+
+/* Global Styles */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+  --primary-color: #1A8EFD;
+  --secondary-color: #00C896;
+  --background: #F2F5FA;
+  --chat-background: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --text-color: #2c3e50;
+  --button-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Wrapper */
+.chatbot-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background);
+  transition: background 0.3s;
+  padding: 40px;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  width: 600px;
+  height: 700px;
+  background: var(--chat-background);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  background: var(--button-bg);
+  color: white;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #5AD45A;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.chatbot-icon {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+/* Header Text Container */
+.chatbot-header-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chatbot Title */
+.chatbot-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Chatbot Subtitle */
+.chatbot-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 4px;
+  opacity: 0.85;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Chatbot Iframe */
+.chatbot-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  flex-grow: 1;
+}

@@ -1,0 +1,63 @@
+.docthea-section {
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background: linear-gradient(to right, #eef2f3, #8ec5fc, #e0c3fc);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+.card {
+  background: linear-gradient(135deg, #ffffff, #dfe9f3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  width: 350px;
+  height: 280px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 18px;
+}
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+.header {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  padding: 25px;
+  color: #0056b3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
