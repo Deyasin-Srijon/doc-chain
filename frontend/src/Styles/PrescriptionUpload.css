@@ -1,0 +1,98 @@
+.upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #3b82f6, #1e40af);
+  }
+  
+  .upload-card {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .upload-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .upload-subtitle {
+    color: gray;
+    margin-bottom: 15px;
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .upload-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+  }
+  
+  .upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .upload-box:hover {
+    background: #f3f4f6;
+  }
+  
+  .upload-icon-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    color: #3b82f6;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .upload-filename {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .upload-error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .upload-button {
+    width: 100%;
+    background: #1e40af;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .upload-button:hover {
+    background: #1e3a8a;
+  }

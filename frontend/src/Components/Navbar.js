@@ -15,7 +15,7 @@ function Navbar() {
     <div className="navbar-section">
       {/* Logo */}
       <h1 className="navbar-title">
-        <Link to="/">Health <span className="navbar-sign">+</span></Link>
+        <Link to="/">DOC-Chain <span className="navbar-sign">+</span></Link>
       </h1>
 
       {/* Center Links */}
@@ -25,7 +25,7 @@ function Navbar() {
         <li><a href="#about" className="navbar-links">About</a></li>
         <li><a href="#reviews" className="navbar-links">Reviews</a></li>
         <li><a href="#doctors" className="navbar-links">Doctors</a></li>
-        <li><Link to="/docthea" className="navbar-links">Docthea</Link></li>
+        <li><Link to="/features" className="navbar-links">Features</Link></li>
       </ul>
 
       {/* Right Section: Login & AI Assist Button */}
@@ -51,7 +51,7 @@ function Navbar() {
           <li><a href="#about" onClick={openNav}>About</a></li>
           <li><a href="#reviews" onClick={openNav}>Reviews</a></li>
           <li><a href="#doctors" onClick={openNav}>Doctors</a></li>
-          <li><a href="/docthea" onClick={openNav}>Docthea</a></li>
+          <li><a href="/features" onClick={openNav}>Features</a></li>
           <li><Link to="/login" onClick={openNav}>Login</Link></li>
           <li><Link to="/chatbot" onClick={openNav}>AI Assist</Link></li>
         </ul>
