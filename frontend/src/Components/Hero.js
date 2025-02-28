@@ -38,12 +38,11 @@ function Hero() {
         <div className="text-section">
           <p className="text-headline">❤️ Health comes first</p>
           <h2 className="text-title">
-            Find your Doctor and make an Appointments
+            Find your Doctor and monetize your data
           </h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+            Talk to online doctors and get medical advice, online prescriptions. Get paid to share your medical data
+           
           </p>
           <button
             className="text-appointment-btn"

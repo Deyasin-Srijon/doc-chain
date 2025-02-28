@@ -13,7 +13,7 @@ import PrescriptionUpload from "./Pages/PrescriptionUploadPage";
 function App() {
   return (
     <div className="App">
-      <Router basename="/Health-Plus">
+      <Router basename="/health-plus">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />

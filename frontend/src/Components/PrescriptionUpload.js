@@ -5,6 +5,7 @@ import { Upload, CloudUpload } from "lucide-react";
 const PrescriptionUpload = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState("");
+  const [successMessage, setSuccessMessage] = useState(""); // ✅ Success state
 
   const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
@@ -12,14 +13,17 @@ const PrescriptionUpload = () => {
       if (!selectedFile.type.startsWith("image/")) {
         setError("Only image files are allowed");
         setFile(null);
+        setSuccessMessage(""); // ✅ Reset success message
         return;
       }
       if (selectedFile.size > 5 * 1024 * 1024) {
         setError("File size should be less than 5MB");
         setFile(null);
+        setSuccessMessage(""); // ✅ Reset success message
         return;
       }
       setError("");
+      setSuccessMessage(""); // ✅ Reset success message when new file is selected
       setFile(selectedFile);
     }
   };
@@ -28,9 +32,10 @@ const PrescriptionUpload = () => {
     event.preventDefault();
     if (!file) {
       setError("Please upload a prescription");
+      setSuccessMessage(""); // ✅ Reset success message
       return;
     }
-    alert("Prescription uploaded successfully");
+    setSuccessMessage("✅ Prescription uploaded successfully!"); // ✅ Set success message
   };
 
   return (
@@ -53,7 +58,9 @@ const PrescriptionUpload = () => {
               {file && <span className="upload-filename">{file.name}</span>}
             </label>
           </div>
+          <p>*Your data could be used for research purposes.</p>
           {error && <p className="upload-error">{error}</p>}
+          {successMessage && <p className="upload-success">{successMessage}</p>}
           <button type="submit" className="upload-button">
             Upload
           </button>

@@ -39,14 +39,14 @@ export default function Docthea() {
       <Header />
       <SmoothScroll />
       <motion.main className="container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <Link to="/chatbot"><Chatbot /></Link>
-        <Link to="/prescriptionupload"><BlockchainHealthRecords /></Link>
+        <Link to="/chatbot" className="no-underline"><Chatbot /></Link>
+        <Link to="/prescriptionupload" className="no-underline"><BlockchainHealthRecords /></Link>
+        <EPrescriptions />
         <AIRecommendation />
         <IoTIntegration />
         <PredictiveAnalytics />
         <SOSFeature />
         <Gamification />
-        <EPrescriptions />
         <CommunityForum />
         <ARTelemedicine />
         <VoiceSearch />

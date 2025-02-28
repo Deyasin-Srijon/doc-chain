@@ -5,6 +5,11 @@
     height: 100vh;
     background: linear-gradient(to bottom right, #3b82f6, #1e40af);
   }
+  .upload-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
   
   .upload-card {
     width: 400px;
@@ -95,4 +100,7 @@
   
   .upload-button:hover {
     background: #1e3a8a;
+  }
+  p{
+    color:red
   }
