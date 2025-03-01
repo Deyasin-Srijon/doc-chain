@@ -1,0 +1,1 @@
+Showing our team Syntax Squad's project DOC-Chain at Hacknex in InnovoCon2K25. Hacknex was a 24 hour Hackathon conducted by JISCE. DOC-Chain is making healthcare smarter, faster, and safer. Our AI predicts diseases, our chatbot gives health advice, and our blockchain technology keeps medical records secure.
